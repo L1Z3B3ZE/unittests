@@ -21,10 +21,10 @@ class Collect
         return new self(array_values($this->array));
     }
 
-    public function get($key = null)
-    {
-        return $this->array[$key] ?? $this->array;
-    }
+        public function get($key = null)
+        {
+            return $this->array[$key] ?? $this->array;
+        }
 
     public function except(...$attrs): Collect
     {
